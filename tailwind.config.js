@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,11 +9,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero': 'url("/images/landing-background1.jpg")',
       },
+      colors: {
+        'primary': '#34506B',
+        'primary-light-1': '#46617d',
+        'primary-light-2': '#617c99',
+        'secondary': '#c59e5b',
+        'third': '#e0e0e0',
+      }
     },
   },
   plugins: [],
-}
+})
