@@ -6,13 +6,20 @@ export default function Page() {
   return (
     <div className='py-[30px] pt-[150px] text-primary'>
       <div className='container mx-auto px-[5%] flex flex-col items-center'>
-        <p className='heading'>Contact Us</p>
+        <p className='text-[32px] md:text-[48px] font-bold mt-[30px]'>Contact Us</p>
         <div className="grid md:grid-cols-2 gap-10 pb-[60px]">
           <ContactForm />
-          <div className='flex flex-col justify-center items-center'>
+          <div className='flex flex-col justify-center items-center order-1'>
             <div className='mt-[40px] flex flex-col  gap-6'>
+              <div>
+                <p className='font-[600] text-[18px]'>SIGNATURE CONCIERGE LTD (DMC)</p>
+                <p>Company Registration Number:- 14026674</p>
+                <p>Registered in England & Wales</p>
+                <p>Trading Names:- Signature Concierge & Kingdom Holidays</p>
+                <p>491 - Sipson Road, West Drayton, UB70JB, United Kingdom</p>
+              </div>
+              {/* Website */}
               <div className='flex gap-5'>
-                {/* Website */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className='w-6 h-6'
@@ -32,12 +39,12 @@ export default function Page() {
                     transform="matrix(.1 0 0 -.1 0 512)"
                   ></path>
                 </svg>
-                <Link href="">
-                  <p>signature-concierge.co.uk</p>
+                <Link href="https://www.signature-concierge.co.uk/">
+                  <p>www.signature-concierge.co.uk</p>
                 </Link>
               </div>
+              {/* Mail */}
               <div className='flex gap-5'>
-                {/* Mail */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className='w-6 h-6'
@@ -57,8 +64,8 @@ export default function Page() {
                   <p>hello@signature-concierge.co.uk</p>
                 </Link>
               </div>
+              {/* Phone */}
               <div className='flex gap-5'>
-                {/* Phone */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className='w-6 h-6'
@@ -70,12 +77,17 @@ export default function Page() {
                     transform="matrix(.1 0 0 -.1 0 512)"
                   ></path>
                 </svg>
-                <Link href="">
-                  <p>+44 (0) 333 444 1248</p>
-                </Link>
+                <div className='flex flex-col'>
+                  <Link href="">
+                    <p>+44 (0) 333 444 1248</p>
+                  </Link>
+                  <Link href="">
+                    <p>+44 (0) 207 897 2173</p>
+                  </Link>
+                </div>
               </div>
+              {/* Whatsapp */}
               <div className='flex gap-5'>
-                {/* Whatsapp */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className='w-6 h-6'

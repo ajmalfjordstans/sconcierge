@@ -163,14 +163,14 @@ const SportData = [
 export default function OurServices() {
   return (
     <div className='container mx-auto px-[5%] py-[40px] flex flex-col items-center'>
-      <p className='heading pt-[120px]'>Our Services</p>
-      <div className="grid grid-cols-3 gap-10 mt-[30px]">
+      <p className='text-[32px] md:text-[48px] font-bold pt-[120px]'>Our Services</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[30px]">
         {ServiceData.map((data, id) => {
           return <ServiceCard key={id} data={data} />
         })}
       </div>
-      <p className='text-[32px] pt-[60px]'>Want to see Sporting Events in the UK?</p>
-      <div className="grid grid-cols-3 gap-10 mt-[30px]">
+      <p className='text-[28px] md:text-[32px] font-semibold pt-[60px]'>Want to see Sporting Events in the UK?</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[30px]">
         {SportData.map((data, id) => {
           return <ServiceCard key={id} data={data} />
         })}

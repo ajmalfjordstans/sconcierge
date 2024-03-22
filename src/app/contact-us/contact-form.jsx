@@ -57,12 +57,12 @@ export default function ContactForm() {
         <Form>
           <div className='flex flex-col gap-2 py-[40px]'>
             <div className='flex flex-col md:flex-row gap-2'>
-              <div className='flex flex-col w-[50%]'>
+              <div className='flex flex-col md:w-[50%]'>
                 <label htmlFor="firstName">First Name*</label>
                 <Field type="text" name="firstName" className='border-[2px] rounded-md p-[10px]' />
                 <ErrorMessage name="firstName" component="div" className="text-[red] text-[12px]" />
               </div>
-              <div className='flex flex-col w-[50%]'>
+              <div className='flex flex-col md:w-[50%]'>
                 <label htmlFor="lastName">Last Name*</label>
                 <Field type="text" name="lastName" className='border-[2px] rounded-md p-[10px]' />
                 <ErrorMessage name="lastName" component="div" className="text-[red] text-[12px]" />

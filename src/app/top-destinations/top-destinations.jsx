@@ -56,14 +56,14 @@ const DestinationCard = ({ data }) => {
   return (
     <div >
       <div
-        class="relative grid h-[500px] w-[80%] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 mx-auto">
+        class="relative grid h-[500px] md:w-[80%] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 mx-auto">
         <div
           className={`absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none text-gray-700 shadow-none`}>
           <Image src={data?.img} height={400} width={1200} alt='country' className={`absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none object-cover`} />
           <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
         </div>
-        <div class="relative p-6 px-6 py-14 md:px-12 max-w-[80%] mx-auto">
-          <h1 class="mb-6 block font-sans text-4xl font-bold leading-[1.5] tracking-normal text-white antialiased">
+        <div class="relative p-2 px-2 py-4 md:px-12 max-w-[80%] mx-auto">
+          <h1 class="mb-6 block font-sans text-[24px] md:text-4xl font-bold leading-[1.5] tracking-normal text-white antialiased">
             {data.country}
           </h1>
           <p className='text-white mb-3'>Why Visit {data.country} ?</p>
@@ -73,7 +73,7 @@ const DestinationCard = ({ data }) => {
         </div>
       </div>
       {data?.cities?.length > 0 && <p className='mt-20 text-[32px] text-white'>Top Cities and Attractions</p>}
-      <div className='grid grid-cols-3 gap-10 mt-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-[30px] md:mt-[80px]'>
         {data?.cities?.map((data, id) => {
           return (
             <CityCard data={data} key={id} />
@@ -210,8 +210,8 @@ export default function TopDestinations() {
   return (
     <div className='bg-primary-light-2 py-[30px] pt-[150px]'>
       <div className='container mx-auto px-[5%] flex flex-col items-center'>
-        <p className='heading text-white'>Top Destinations</p>
-        <div className='flex flex-col gap-10 mt-[80px] pb-[160px]'>
+        <p className='text-[32px] md:text-[48px] font-bold text-white mt-[30px]'>Top Destinations</p>
+        <div className='flex flex-col gap-24 mt-[80px] pb-[160px]'>
           {DestinationData.map((data, id) => {
             return (
               <DestinationCard data={data} key={id} />

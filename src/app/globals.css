@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-.heading {
+.text-[32px] md:text-[48px] font-bold {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 1.5rem;
