@@ -210,7 +210,7 @@ export default function TopDestinations() {
   return (
     <div className='bg-primary-light-2 py-[30px] pt-[150px]'>
       <div className='container mx-auto px-[5%] flex flex-col items-center'>
-        <p className='text-[32px] md:text-[48px] font-bold text-white mt-[30px]'>Top Destinations</p>
+        <p className='text-[32px] md:text-[48px] font-bold text-white mt-[30px]'>Destinations</p>
         <div className='flex flex-col gap-24 mt-[80px] pb-[160px]'>
           {DestinationData.map((data, id) => {
             return (

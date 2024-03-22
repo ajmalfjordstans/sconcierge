@@ -6,12 +6,14 @@ import React from 'react'
 
 const ServiceCard = ({ data }) => {
   return (
-    <div className='flex flex-col gap-3 items-start p-[25px] shadow-md rounded-lg bg-third'>
-      <div className='flex items-center gap-5'>
-        <Image src={data.img} height={70} width={70} alt='image' className='w-10 h-10' />
-        <p className='font-[600] text-[18px]'>{data.title}</p>
+    <div className='flex flex-col gap-3 items-start p-[25px] hover:shadow-xl cursor-pointer hover:scale-105 rounded-3xl border-[1px] border-third transition-all duration-300'>
+      <div className='w-full flex justify-center'>
+        <div className='flex justify-center items-center gap-5'>
+          <Image src={data.img} height={70} width={70} alt='image' className='w-8 h-8' />
+          <p className='font-[600] text-[18px]'>{data.title}</p>
+        </div>
       </div>
-      <div className='flex flex-col gap-2'>
+      <div className='flex flex-col gap-2 text-center'>
         <p className='text-[14px] font-[500]'>{data.desc}</p>
       </div>
     </div>

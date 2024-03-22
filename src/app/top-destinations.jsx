@@ -72,7 +72,7 @@ const DestinationData = [
     title: 'Stockholm',
     attractions: 'Explore the historic Gamla Stan (Old Town), visit the Vasa Museum to see a perfectly preserved 17th-century warship, and take a leisurely stroll along the picturesque waterfront of Djurgården.',
     unique: 'Stockholm is known for its innovative design, vibrant cultural scene, and commitment to sustainability. Don’t miss the opportunity to experience the tradition of fika – enjoying coffee and pastries with friends.'
-  },  
+  },
   {
     img: 'https://images.unsplash.com/photo-1549693578-d683be217e58?q=80&w=2077&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     title: 'Tokyo',
@@ -93,22 +93,49 @@ const DestinationData = [
   },
 ]
 
+const cities = [
+  'London', 'Birmingham', 'Manchester', 'Glasgow', 'Edinburgh', 'Belfast', 'Dublin',
+  'Paris', 'Rome', 'Barcelona', 'Prague', 'Vienna', 'Lisbon', 'Copenhagen', 'Amsterdam',
+  'Budapest', 'Florence', 'Athens', 'Madrid', 'Berlin', 'Venice', 'Stockholm', 'Seville',
+  'Munich', 'Porto', 'Hamburg', 'Milan', 'Zurich', 'Geneva', 'New York', 'Washington DC',
+  'Miami', 'Toronto', 'Bahamas', 'Tokyo', 'Kyoto', 'Osaka', 'Hiroshima', 'Seoul', 'Busan',
+  'Taipei', 'Singapore', 'Hong Kong'
+];
+
 export default function TopDestinations() {
   return (
-    <div className='bg-primary-light-2 py-[30px]'>
-      <div className='container mx-auto px-[5%] flex flex-col items-center pt-[80px]'>
-        <p className='text-[32px] md:text-[48px] font-bold text-white'>Top Destinations</p>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-[80px]'>
-          {DestinationData.map((data, id) => {
-            return (
-              <DestinationCard data={data} key={id} />
-            )
-          })}
+    <>
+      <div className='bg-primary-light-2 py-[30px]'>
+        <div className='container mx-auto px-[5%] flex flex-col items-center pt-[80px]'>
+          <p className='text-[32px] md:text-[48px] font-bold text-white'>Top Destinations</p>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-[80px]'>
+            {DestinationData.map((data, id) => {
+              return (
+                <DestinationCard data={data} key={id} />
+              )
+            })}
+          </div>
+          <Link href="/top-destinations">
+            <Button className='mt-[30px] bg-third text-primary capitalize'>Show more</Button>
+          </Link>
         </div>
-        <Link href="/top-destinations">
-          <Button className='mt-[30px] bg-third text-primary capitalize'>Show more</Button>
-        </Link>
       </div>
-    </div>
+      <div className='bg-primary-light-1 py-[30px]'>
+        <div className='flex flex-col items-center '>
+          <marquee behavior="scroll" direction="">
+            <div className='flex gap-4 text-white'>
+              {cities.map((data, id) => {
+                return (
+                  <div key={id} className='flex gap-4 text-[22px]'>
+                    <p>{data}</p>
+                    <p>|</p>
+                  </div>
+                )
+              })}
+            </div>
+          </marquee>
+        </div>
+      </div>
+    </>
   )
 }

@@ -10,7 +10,7 @@ export default function About() {
             Welcome to Signature Concierge DMC, where every journey is a crafted master piece and every experience is tailored to exceed your expectations. As a premier destination management company based in the heart of London, we invite you to delve into the essence of who we are and the unparalleled commitment we bring to curating exceptional travel experiences.
           </p>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[50px]'>
-            <div className='flex flex-col items-center text-center gap-4'>
+            <div className='flex flex-col items-center text-center gap-4 border-white border-[1px] rounded-3xl p-[15px] shadow-md'>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='w-10 h-10'>
                 <path
                   fill="var(--ci-primary-color, currentColor)"
@@ -23,7 +23,7 @@ export default function About() {
                 Embark on a voyage with Signature Concierge DMC, a journey marked by years of expertise, passion for travel, and a relentless pursuit of excellence. From our humble beginnings to becoming a leading name in the industry, our evolution is a testament to our dedication to providing seamless and unforgettable travel adventures.
               </p>
             </div>
-            <div className='flex flex-col items-center text-center gap-4'>
+            <div className='flex flex-col items-center text-center gap-4 border-white border-[1px] rounded-3xl p-[15px] shadow-md'>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className='w-10 h-10'
@@ -40,7 +40,7 @@ export default function About() {
                 At the core of our company are values that shape every interaction and experience we deliver. Integrity, innovation, and a client-centric approach form the pillars of our foundation. We believe in creating not just trips, but enduring memories, and our values guide us in ensuring that each moment is imbued with authenticity and exceptional service.
               </p>
             </div>
-            <div className='flex flex-col items-center text-center gap-4'>
+            <div className='flex flex-col items-center text-center gap-4 border-white border-[1px] rounded-3xl p-[15px] shadow-md'>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className='w-10 h-10'
@@ -54,7 +54,7 @@ export default function About() {
                 <path d="M20.42 4.58a5.4 5.4 0 00-7.65 0l-.77.78-.77-.78a5.4 5.4 0 00-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path>
                 <path d="M12 5.36L8.87 8.5a2.13 2.13 0 000 3h0a2.13 2.13 0 003 0l2.26-2.21a3 3 0 014.22 0l2.4 2.4M18 15l-2-2M15 18l-2-2"></path>
               </svg>
-              <span className='font-[600] mr-[10px] text-[16px] lg:text-[22px]'>Our Commitment</span>
+              <span className='font-[600] mr-[10px] text-[16px] lg:text-[22px] '>Our Commitment</span>
               <p className='text-[14px]'>
                 Our commitment goes beyond logistical perfection; it extends to crafting moments that linger in your memory. We are dedicated to understanding your unique desires and preferences, tailoring our services to transform your vision into a reality. Whether you&apos;re embarking on a business journey, a family vacation, or celebrating a special occasion, our commitment to excellence ensures that every detail is meticulously handled.
               </p>
@@ -72,8 +72,8 @@ export default function About() {
             <p className='text-center max-w-[700px] mx-auto mt-[25px]'>
               At Signature Concierge DMC, our identity is woven from the fabric of a dynamic and dedicated team, each member fueled by an unwavering passion for travel and a shared mission to surpass your expectations. Get acquainted with the driving force behind our commitment to excellence.
             </p>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-[50px]'>
-              <div className='flex flex-col items-center text-center gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-[50px]'>
+              <div className='flex flex-col items-center text-center gap-4 border-white border-[1px] rounded-3xl p-[15px] shadow-md'>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className='w-10 h-10'
@@ -88,7 +88,7 @@ export default function About() {
                   We take pride in assembling a team of seasoned travel professionals, each chosen not only for their expertise but for their genuine love for exploration. From travel enthusiasts to industry veterans, our diverse team brings a wealth of experience, cultural insights, and a shared enthusiasm for creating extraordinary journeys.
                 </p>
               </div>
-              <div className='flex flex-col items-center text-center gap-4'>
+              <div className='flex flex-col items-center text-center gap-4 border-white border-[1px] rounded-3xl p-[15px] shadow-md'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" className='w-10 h-10'>
                   <circle
                     cx="4.5"
@@ -124,7 +124,7 @@ export default function About() {
                   What sets our team apart is more than just professional expertise – it&apos;s a shared passion for the art of travel. We are not merely consultants; we are avid travelers ourselves, constantly seeking new horizons, unique experiences, and hidden gems. This genuine love for exploration fuels our creativity and infuses every recommendation and service with a personal touch.
                 </p>
               </div>
-              <div className='flex flex-col items-center text-center gap-4'>
+              <div className='flex flex-col items-center text-center gap-4 border-white border-[1px] rounded-3xl p-[15px] shadow-md'>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="512"
@@ -155,7 +155,7 @@ export default function About() {
                   Our team comprises individuals with a wealth of knowledge spanning various corners of the globe. From the bustling streets of London to the serene landscapes of Japan and the vibrant energy of South Korea, our experts possess an intimate understanding of diverse cultures and destinations. This global perspective enables us to curate experiences that go beyond the ordinary.
                 </p>
               </div>
-              <div className='flex flex-col items-center text-center gap-4'>
+              <div className='flex flex-col items-center text-center gap-4 border-white border-[1px] rounded-3xl p-[15px] shadow-md'>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

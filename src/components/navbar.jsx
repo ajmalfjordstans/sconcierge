@@ -14,7 +14,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 100);
+      setIsScrolled(scrollTop > 30);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -78,7 +78,7 @@ export default function Navbar() {
                   <p>Our Services</p>
                 </Link>
                 <Link href="/top-destinations" onClick={handleMenuToggle}>
-                  <p>Top Destinations</p>
+                  <p>Destinations</p>
                 </Link>
                 <Link href="/contact-us" onClick={handleMenuToggle}>
                   <p>Contact Us</p>
