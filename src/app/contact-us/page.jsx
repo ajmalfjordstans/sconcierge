@@ -39,7 +39,7 @@ export default function Page() {
                     transform="matrix(.1 0 0 -.1 0 512)"
                   ></path>
                 </svg>
-                <Link href="https://www.signature-concierge.co.uk/">
+                <Link href="https://www.signature-concierge.co.uk/" target="_blank">
                   <p>www.signature-concierge.co.uk</p>
                 </Link>
               </div>
@@ -60,7 +60,7 @@ export default function Page() {
                     transform="matrix(.1 0 0 -.1 0 512)"
                   ></path>
                 </svg>
-                <Link href="">
+                <Link href="mailto:hello@signature-concierge.co.uk" target="_blank">
                   <p>hello@signature-concierge.co.uk</p>
                 </Link>
               </div>
@@ -78,10 +78,10 @@ export default function Page() {
                   ></path>
                 </svg>
                 <div className='flex flex-col'>
-                  <Link href="">
+                  <Link href="tel:+443334441248">
                     <p>+44 (0) 333 444 1248</p>
                   </Link>
-                  <Link href="">
+                  <Link href="tel:+442078972173">  
                     <p>+44 (0) 207 897 2173</p>
                   </Link>
                 </div>
@@ -99,7 +99,7 @@ export default function Page() {
                     transform="matrix(.1 0 0 -.1 0 512)"
                   ></path>
                 </svg>
-                <Link href="">
+                <Link href="https://wa.me/447407610606" target="_blank">
                   <p>+44 7407 610 606</p>
                 </Link>
               </div>

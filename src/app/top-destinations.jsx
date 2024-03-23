@@ -42,12 +42,14 @@ const DestinationCard = ({ data }) => {
           </div>
         </div>
         <div className="p-6 pt-3">
-          <Button
-            className="bg-primary"
-            fullWidth
-            type="button">
-            Reserve
-          </Button>
+          <Link href="/contact-us">
+            <Button
+              className="bg-primary"
+              fullWidth
+              type="button">
+              Reserve
+            </Button>
+          </Link>
         </div>
       </div>
     </>

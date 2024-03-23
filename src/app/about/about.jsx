@@ -19,7 +19,7 @@ export default function About() {
                 ></path>
               </svg>
               <span className='font-[600] mr-[10px] text-[16px] lg:text-[22px]'> Our Journey</span>
-              <p className='text-[14px]'>
+              <p className='text-[14px] text-left'>
                 Embark on a voyage with Signature Concierge DMC, a journey marked by years of expertise, passion for travel, and a relentless pursuit of excellence. From our humble beginnings to becoming a leading name in the industry, our evolution is a testament to our dedication to providing seamless and unforgettable travel adventures.
               </p>
             </div>
@@ -36,7 +36,7 @@ export default function About() {
                 </g>
               </svg>
               <span className='font-[600] mr-[10px] text-[16px] lg:text-[22px]'>Our Values</span>
-              <p className='text-[14px]'>
+              <p className='text-[14px] text-left'>
                 At the core of our company are values that shape every interaction and experience we deliver. Integrity, innovation, and a client-centric approach form the pillars of our foundation. We believe in creating not just trips, but enduring memories, and our values guide us in ensuring that each moment is imbued with authenticity and exceptional service.
               </p>
             </div>
@@ -55,7 +55,7 @@ export default function About() {
                 <path d="M12 5.36L8.87 8.5a2.13 2.13 0 000 3h0a2.13 2.13 0 003 0l2.26-2.21a3 3 0 014.22 0l2.4 2.4M18 15l-2-2M15 18l-2-2"></path>
               </svg>
               <span className='font-[600] mr-[10px] text-[16px] lg:text-[22px] '>Our Commitment</span>
-              <p className='text-[14px]'>
+              <p className='text-[14px] text-left'>
                 Our commitment goes beyond logistical perfection; it extends to crafting moments that linger in your memory. We are dedicated to understanding your unique desires and preferences, tailoring our services to transform your vision into a reality. Whether you&apos;re embarking on a business journey, a family vacation, or celebrating a special occasion, our commitment to excellence ensures that every detail is meticulously handled.
               </p>
             </div>

@@ -6,7 +6,7 @@ import React from 'react'
 
 const ServiceCard = ({ data }) => {
   return (
-    <div className='flex flex-col gap-3 items-start p-[25px] hover:shadow-xl cursor-pointer hover:scale-105 rounded-3xl border-[1px] border-third transition-all duration-300'>
+    <div className={`flex flex-col gap-3 items-start p-[25px] hover:shadow-xl cursor-pointer hover:scale-105 rounded-3xl border-[1px] border-third transition-all duration-300 ${data?.custom && 'bg-primary-light-2 text-white'}`}>
       <div className='w-full flex justify-center'>
         <div className='flex justify-center items-center gap-5'>
           <Image src={data.img} height={70} width={70} alt='image' className='w-8 h-8' />
@@ -120,7 +120,8 @@ const ServiceData = [
   {
     img: '/icons/services/customize.svg',
     title: 'Customised Tailor Made Holidays',
-    desc: 'Craft unique journeys designed to your specifications with our Customized Tailor-Made Holidays service. Our experts work with you to create personalized itineraries, ensuring every detail aligns with your preferences and travel dreams.'
+    desc: 'Craft unique journeys designed to your specifications with our Customized Tailor-Made Holidays service. Our experts work with you to create personalized itineraries, ensuring every detail aligns with your preferences and travel dreams.',
+    custom: true,
   },
 ]
 
