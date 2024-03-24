@@ -10,7 +10,7 @@ const ServiceCard = ({ data }) => {
       {data.img &&
         <Image src={data?.img} height={300} width={300} className='w-full h-full object-cover' />
       }
-      <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+      <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
       <div className='text-white absolute bottom-0 p-[15px]'>
         <div className='w-full flex justify-center p-[25px]'>
           <div className='flex justify-center items-center gap-5'>

@@ -58,18 +58,18 @@ const DestinationCard = ({ data }) => {
   return (
     <div >
       <div
-        class="relative grid h-[500px] md:w-[80%] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 mx-auto">
+        className="relative grid h-[500px] md:w-[80%] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 mx-auto">
         <div
           className={`absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none text-gray-700 shadow-none`}>
           <Image src={data?.img} height={400} width={1200} alt='country' className={`absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none object-cover`} />
           <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
         </div>
-        <div class="relative p-2 px-2 py-4 md:px-12 max-w-[80%] mx-auto">
-          <h1 class="mb-6 block font-sans text-[24px] md:text-4xl font-bold leading-[1.5] tracking-normal text-white antialiased">
+        <div className="relative p-2 px-2 py-4 md:px-12 max-w-[80%] mx-auto">
+          <h1 className="mb-6 block font-sans text-[24px] md:text-4xl font-bold leading-[1.5] tracking-normal text-white antialiased">
             {data.country}
           </h1>
           <p className='text-white mb-3'>Why Visit {data.country} ?</p>
-          <p class="block mb-4 font-sans text-[16px] antialiased font-normal leading-snug tracking-normal text-gray-400">
+          <p className="block mb-4 font-sans text-[16px] antialiased font-normal leading-snug tracking-normal text-gray-400">
             {data.why}
           </p>
         </div>

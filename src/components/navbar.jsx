@@ -25,7 +25,7 @@ export default function Navbar() {
   }, []);
   return (
     <>
-      <div className={`${isScrolled ? 'bg-primary py-[0px]' : 'bg-primary bg-opacity-70 py-[15px]'} text-third  fixed top-0 w-full transition-all duration-300 z-[100]`}>
+      <div className={`${isScrolled ? 'bg-primary py-[0px]' : 'bg-primary bg-opacity-70 py-[15px]'} text-third  fixed top-0 w-[100vw] transition-all duration-300 z-[100]`}>
         <div className='container mx-auto px-[5%] flex justify-between items-center'>
           <Link href="/">
             <Image src="/icons/logo.png" width={300} height={200} alt='logo' className='lg:w-full md:w-[200px] lg:max-w-[600px]' />
