@@ -16,21 +16,24 @@ export default function Footer() {
   return (
     <div className='bg-primary-light-1 py-[60px] text-third'>
       <div className='container mx-auto px-[5%] text-[14px] md:text-[16px]'>
-        <div className='grid gap-1 grid-cols-1 md:grid-cols-5'>
-          {/* Destinations */}
-          <div className='flex flex-col gap-1 col-span-2'>
-            <p className='font-[600] pb-[10px] text-[18px]'>Destinations</p>
-            <div className='grid grid-cols-2 gap-1'>
-              {cities.map((city, id) => {
-                return (
-                  <Link href="/top-destinations" key={id}>
+        {/* Destinations */}
+        <div className='flex flex-col gap-1 col-span-2'>
+          <p className='font-[600] pb-[10px] text-[18px] text-center'>Destinations</p>
+          <div className='flex gap-5 flex-wrap justify-center'>
+            {cities.map((city, id) => {
+              return (
+                <Link href="/top-destinations" key={id}>
+                  <div className='flex gap-5'>
                     <p>{city}</p>
-                  </Link>
-                )
-              })}
-            </div>
-            {/* London | Birmingham | Manchester | Glasgow | Edinburgh | Belfast | Dublin | Paris | Rome | Barcelona | Prague | Vienna | Lisbon | Copenhagen | Amsterdam | Budapest | Florence | Athens | Madrid | Berlin | Venice | Stockholm | Seville | Munich | Porto | Hamburg | Milan | Zurich | Geneva | New York | Washington DC | Miami | Toronto | Bahamas |  Tokyo | Kyoto | Osaka | Hiroshima | Seoul | Busan | Taipai | Singapore | Hong Kong */}
+                    <p>|</p>
+                  </div>
+                </Link>
+              )
+            })}
           </div>
+          {/* London | Birmingham | Manchester | Glasgow | Edinburgh | Belfast | Dublin | Paris | Rome | Barcelona | Prague | Vienna | Lisbon | Copenhagen | Amsterdam | Budapest | Florence | Athens | Madrid | Berlin | Venice | Stockholm | Seville | Munich | Porto | Hamburg | Milan | Zurich | Geneva | New York | Washington DC | Miami | Toronto | Bahamas |  Tokyo | Kyoto | Osaka | Hiroshima | Seoul | Busan | Taipai | Singapore | Hong Kong */}
+        </div>
+        <div className='grid gap-1 grid-cols-1 md:grid-cols-3 mt-10'>
           <div className='col-span-3'>
             <div className='grid grid-cols-2 lg:grid-cols-3 gap-1'>
               {/* About Us */}
@@ -132,7 +135,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className='flex justify-center items-center flex-wrap gap-10 w-full mt-[60px]'>
+            <div className='grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-10 w-full mt-[60px]'>
               <Link href="/" className='flex justify-center items-center'>
                 <Image src="/icons/logo.png" height={200} width={300} alt='logo' className='' />
               </Link>
