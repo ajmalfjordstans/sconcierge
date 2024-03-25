@@ -25,11 +25,15 @@ export default function Navbar() {
   }, []);
   return (
     <>
-      <div className={`${isScrolled ? 'bg-primary py-[0px]' : 'bg-primary bg-opacity-70 py-[15px]'} text-third  fixed top-0 w-[100vw] transition-all duration-300 z-[100]`}>
+      <div className={`${isScrolled ? 'bg-primary py-[15px]' : 'bg-primary bg-opacity-70 py-[30px]'} text-third  fixed top-0 w-[100vw] transition-all duration-300 z-[100]`}>
         <div className='container mx-auto px-[5%] flex justify-between items-center'>
-          <Link href="/">
+          {/* <Link href="/">
             <Image src="/icons/logo.png" width={300} height={200} alt='logo' className='lg:w-full md:w-[200px] lg:max-w-[600px]' />
-          </Link>
+          </Link> */}
+          <div className='text-[#c8a45e] text-center'>
+            <p className='font-[600] text-[32px] leading-[30px]'>Signature Concierge</p>
+            <p className='font-[600] text-[9px]'>Destination Management Company</p>
+          </div>
           <div className='hidden lg:block'>
             <div className='flex gap-6 items-center font-[500] text-[12px] lg:text-[16px]'>
               <Link href="/">
