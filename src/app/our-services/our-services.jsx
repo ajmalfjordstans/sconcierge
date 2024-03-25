@@ -6,7 +6,7 @@ import React from 'react'
 
 const ServiceCard = ({ data }) => {
   return (
-    <div className={`flex flex-col gap-3 items-start hover:shadow-xl cursor-pointer  hover:scale-105 rounded-3xl border-[1px] border-third transition-all duration-300 ${data?.custom && 'bg-[#c8a45e] text-white'} overflow-hidden relative h-[350px]`}>
+    <div className={`flex flex-col gap-3 items-start hover:shadow-xl cursor-pointer  hover:scale-105 rounded-3xl border-[1px] border-third transition-all duration-300 ${data?.custom && 'bg-[#c8a45e] text-white'} overflow-hidden relative h-[350px] text-center`}>
       {data.img &&
         <Image src={data?.img} height={300} width={300} className='w-full h-full object-cover' />
       }
@@ -124,6 +124,16 @@ const ServiceData = [
     title: 'Restaurant Reservations',
     desc: 'Secure reservations at top dining establishments with our Restaurant Reservations service.Whether for a business dinner or a special celebration, savor exquisite culinary experiences at your preferred locations.'
   },
+  {
+    img: 'https://images.unsplash.com/photo-1561131668-f63504fc549d?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Airport Transfer Group Coordination',
+    desc: "Signature Concierge DMC provides complete airport transfer services for groups, ensuring seamless transportation experiences. From small to large parties, our dedicated team manages all coordination aspects, allowing you to enjoy your journey without transportation worries."
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Concierge Services',
+    desc: "Our Concierge Services are designed to enhance your travel experience by providing personalized assistance and support throughout your trip. From restaurant reservations and event bookings to local recommendations and special requests, our experienced concierge team is dedicated to fulfilling your every need. Whether you're looking for insider tips on attractions or require assistance with last-minute arrangements, we're here to ensure your stay is memorable and stress-free."
+  },
   // {
   //   icon: '/icons/services/customize.svg',
   //   title: 'Customised Tailor Made Holidays',
@@ -145,12 +155,12 @@ const SportData = [
   },
   {
     img: 'https://images.unsplash.com/photo-1530915534664-4ac6423816b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    title: 'Wimbledon Tennis League',
+    title: 'Wimbledon Tennis Grand Slam',
     desc: "Experience the elegance of Wimbledon, the oldest tennis tournament in the world, synonymous with tradition and excellence. Secure tickets to witness tennis legends compete on the hallowed grass courts. Experience the elegance of white attire, the thrill of intense matches, and the iconic traditions of this Grand Slam event."
   },
   {
     img: 'https://images.unsplash.com/photo-1587385789097-0197a7fbd179?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    title: "Lord's Cricket Events",
+    title: "Lord's Cricket Matches",
     desc: "Lord's Cricket Ground, often referred to as the \"Home of Cricket,\" hosts prestigious cricket events. Enjoy the timeless sport in an iconic setting. From international test matches to thrilling T20 games, Lord's offers an unparalleled cricketing experience with its rich history and superb facilities."
   },
   {
@@ -167,6 +177,16 @@ const SportData = [
     img: 'https://images.unsplash.com/photo-1597369237991-5c95d1b6e0c8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     title: "Golf Competitions In UK",
     desc: "The UK is renowned for hosting world-class golf competitions set against breathtaking landscapes. Events such as The Open Championship offer the opportunity to witness top golfers take on iconic courses like St Andrews. It's a chance to immerse yourself in the strategic elegance of golf while enjoying the camaraderie and sportsmanship of these prestigious tournaments."
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1517340650606-17091f8e86ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: "Rugby World Cup",
+    desc: "Experience the excitement of the Rugby World Cup, where the world's top rugby nations compete for glory on the global stage. From the electrifying atmosphere of the stadiums to the thrilling action on the field, immerse yourself in the passion and intensity of this iconic tournament with our bespoke travel packages."
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1614632537197-38a17061c2bd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: "Champions League",
+    desc: "Witness the drama and spectacle of the UEFA Champions League, Europe's premier club football competition. Be there to cheer on your favorite teams as they battle it out for supremacy, from the group stages to the thrilling knockout rounds. With our VIP access and expert concierge services, elevate your Champions League experience to new heights."
   },
 ]
 

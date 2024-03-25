@@ -30,10 +30,12 @@ export default function Navbar() {
           {/* <Link href="/">
             <Image src="/icons/logo.png" width={300} height={200} alt='logo' className='lg:w-full md:w-[200px] lg:max-w-[600px]' />
           </Link> */}
-          <div className='text-[#c8a45e] text-center'>
-            <p className='font-[600] text-[32px] leading-[30px]'>Signature Concierge</p>
-            <p className='font-[600] text-[9px]'>Destination Management Company</p>
-          </div>
+          <Link href="/">
+            <div className='text-[#c8a45e] text-center'>
+              <p className='font-[600] text-[32px] leading-[30px]'>Signature Concierge</p>
+              <p className='font-[600] text-[9px]'>Destination Management Company</p>
+            </div>
+          </Link>
           <div className='hidden lg:block'>
             <div className='flex gap-6 items-center font-[500] text-[12px] lg:text-[16px]'>
               <Link href="/">

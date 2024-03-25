@@ -26,18 +26,30 @@ const CityCard = ({ data }) => {
               {data.title}
             </h5>
           </div>
-          <div>
-            <p className='font-[600]'>Attractions:</p>
-            <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
-              {data.attractions}
-            </p>
-          </div>
-          <div>
-            <p className='font-[600]'>Unique Factors:</p>
-            <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
-              {data.unique}
-            </p>
-          </div>
+          {data?.cities &&
+            <div>
+              <p className='font-[600]'>Cities:</p>
+              <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                {data.cities}
+              </p>
+            </div>
+          }
+          {data?.attractions &&
+            <div>
+              <p className='font-[600]'>Attractions:</p>
+              <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                {data.attractions}
+              </p>
+            </div>
+          }
+          {data?.unique &&
+            <div>
+              <p className='font-[600]'>Unique Factors:</p>
+              <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                {data.unique}
+              </p>
+            </div>
+          }
         </div>
       </div>
       <div className="p-6 pt-3">
@@ -206,6 +218,85 @@ const DestinationData = [
     ,
     why: "South Korea beckons travelers with its captivating blend of ancient traditions, modern cities, and natural wonders. From the vibrant streets of Seoul to the serene beauty of Jeju Island, South Korea offers a diverse range of experiences. Its unique blend of history, technology, and natural beauty make it a top destination for those seeking a dynamic and enriching travel experience."
   },
+  {
+    country: 'North America',
+    img: 'https://images.unsplash.com/photo-1547815749-838c83787de2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    cities: [
+      {
+        img: 'https://images.unsplash.com/photo-1546083381-2bed38b42cac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'New York',
+        attractions: 'New York City, the cultural and financial capital of the United States, is renowned for its iconic landmarks such as the Statue of Liberty, Times Square, Central Park, Broadway theaters, and world-class museums like the Metropolitan Museum of Art and Museum of Modern Art.',
+        // unique: ''
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1617293541287-8c3aac62a116?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Washington DC',
+        attractions: 'Washington DC, the capital of the United States, is home to iconic landmarks like the White House, Capitol Building, Lincoln Memorial, and Smithsonian museums. Visitors can explore the National Mall, visit the National Zoo, and learn about American history and culture.',
+        // unique: ''
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1476984251899-8d7fdfc5c92c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Miami',
+        attractions: "Miami, Florida's vibrant city, offers stunning beaches, vibrant nightlife, and cultural diversity. Attractions include South Beach, Art Deco Historic District, Wynwood Walls, and the bustling nightlife of Miami Beach.",
+        // unique: ''
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1542704792-e30dac463c90?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Toronto',
+        attractions: "Toronto, Canada's largest city, boasts attractions like the CN Tower, Royal Ontario Museum, Toronto Islands, and vibrant neighborhoods like Kensington Market and Distillery District.",
+        // unique: ''
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1562036861-44811e0b4481?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Bahamas',
+        attractions: "The Bahamas, a Caribbean paradise, offers pristine beaches, crystal-clear waters, and vibrant coral reefs. Attractions include Paradise Island, Atlantis Paradise Resort, Pink Sands Beach, and snorkeling and diving adventures.",
+        // unique: ''
+      },
+    ],
+    why: "These cities and countries offer a diverse array of experiences, from historic landmarks and cultural attractions to natural wonders and vibrant city life."
+  },
+  {
+    country: 'Scandinavian countries',
+    img: 'https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    cities: [
+      {
+        img: 'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Sweden',
+        cities: 'Stockholm (capital), Gothenburg, Malmö',
+        attractions: 'Gamla Stan (Old Town) in Stockholm, Vasa Museum, Skansen Open-Air Museum, ABBA The Museum, Icehotel in Jukkasjärvi, Göta Canal, Drottningholm Palace',
+        // unique: ''
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Norway',
+        cities: 'Oslo (capital), Bergen, Trondheim',
+        attractions: 'Bryggen Wharf in Bergen, Geirangerfjord, Trolltunga, Viking Ship Museum in Oslo, Nidaros Cathedral in Trondheim, The Northern Lights (Aurora Borealis), Lofoten Islands',
+        // unique: ''
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Denmark',
+        cities: 'Copenhagen (capital), Aarhus, Odense',
+        attractions: 'Tivoli Gardens in Copenhagen, Nyhavn, The Little Mermaid Statue, Rosenborg Castle, Legoland Billund, Aarhus Old Town, Kronborg Castle',
+        // unique: ''
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Finland',
+        cities: 'Helsinki (capital), Turku, Tampere',
+        attractions: 'Suomenlinna Sea Fortress in Helsinki, Santa Claus Village in Rovaniemi, Northern Lights (Aurora Borealis), Sibelius Monument, Rovaniemi Arctic Circle, Kemi SnowCastle, Nuuksio National Park',
+        // unique: ''
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1500043357865-c6b8827edf10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Iceland:',
+        cities: 'Reykjavik (capital), Akureyri, Hafnarfjörður',
+        attractions: 'Blue Lagoon, Golden Circle (Thingvellir National Park, Geysir Geothermal Area, Gullfoss Waterfall), Jökulsárlón Glacier Lagoon, The Northern Lights (Aurora Borealis), Seljalandsfoss Waterfall, Skógafoss Waterfall, Vatnajökull National Park',
+        // unique: ''
+      },
+    ],
+    why: "These Scandinavian countries offer breathtaking natural landscapes, rich cultural heritage, and vibrant cities, making them ideal destinations for travelers seeking adventure, culture, and relaxation."
+  }
 ]
 
 export default function TopDestinations() {
