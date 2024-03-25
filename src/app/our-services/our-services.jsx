@@ -6,7 +6,7 @@ import React from 'react'
 
 const ServiceCard = ({ data }) => {
   return (
-    <div className={`flex flex-col gap-3 items-start hover:shadow-xl cursor-pointer  hover:scale-105 rounded-3xl border-[1px] border-third transition-all duration-300 ${data?.custom && 'bg-primary-light-2 text-white'} overflow-hidden relative h-[350px]`}>
+    <div className={`flex flex-col gap-3 items-start hover:shadow-xl cursor-pointer  hover:scale-105 rounded-3xl border-[1px] border-third transition-all duration-300 ${data?.custom && 'bg-[#c8a45e] text-white'} overflow-hidden relative h-[350px]`}>
       {data.img &&
         <Image src={data?.img} height={300} width={300} className='w-full h-full object-cover' />
       }
@@ -124,12 +124,12 @@ const ServiceData = [
     title: 'Restaurant Reservations',
     desc: 'Secure reservations at top dining establishments with our Restaurant Reservations service.Whether for a business dinner or a special celebration, savor exquisite culinary experiences at your preferred locations.'
   },
-  {
-    icon: '/icons/services/customize.svg',
-    title: 'Customised Tailor Made Holidays',
-    desc: 'Craft unique journeys designed to your specifications with our Customized Tailor-Made Holidays service. Our experts work with you to create personalized itineraries, ensuring every detail aligns with your preferences and travel dreams.',
-    custom: true,
-  },
+  // {
+  //   icon: '/icons/services/customize.svg',
+  //   title: 'Customised Tailor Made Holidays',
+  //   desc: 'Craft unique journeys designed to your specifications with our Customized Tailor-Made Holidays service. Our experts work with you to create personalized itineraries, ensuring every detail aligns with your preferences and travel dreams.',
+  //   custom: true,
+  // },
 ]
 
 const SportData = [
@@ -178,6 +178,20 @@ export default function OurServices() {
         {ServiceData.map((data, id) => {
           return <ServiceCard key={id} data={data} />
         })}
+      </div>
+      <div className={`flex flex-col gap-3 items-start hover:shadow-xl cursor-pointer hover:scale-105 rounded-3xl border-[1px] border-third transition-all duration-300 bg-[#c8a45e] text-white overflow-hidden relative h-[350px] w-[500px] mt-[40px]`}>
+        <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+        <div className='text-white absolute bottom-10 p-[15px]'>
+          <div className='w-full flex justify-center p-[25px]'>
+            <div className='flex justify-center items-center gap-5'>
+              <Image src="/icons/services/customize.svg" height={70} width={70} alt='image' className='w-8 h-8' />
+              <p className='font-[600] text-[18px]'>Customised Tailor Made Holidays</p>
+            </div>
+          </div>
+          <div className='flex flex-col gap-2 text-center'>
+            <p className='text-[14px] font-[500]'>Craft unique journeys designed to your specifications with our Customized Tailor-Made Holidays service. Our experts work with you to create personalized itineraries, ensuring every detail aligns with your preferences and travel dreams.</p>
+          </div>
+        </div>
       </div>
       <p className='text-[28px] md:text-[32px] font-semibold pt-[60px]'>Want to see Sporting Events in the UK?</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[30px]">
