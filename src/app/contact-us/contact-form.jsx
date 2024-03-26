@@ -27,8 +27,8 @@ export default function ContactForm() {
   return (
     <>
       {success ?
-        <div className='flex justify-center items-center'>
-          <p className='font-[600]'>Form Submitted Successfully</p>
+        <div className='flex justify-center items-center text-center'>
+          <p className='font-[600]'>Thank you for your enquiry, One of our agent will contact you shortly</p>
         </div>
         :
         <Formik

@@ -32,7 +32,7 @@ export default function Navbar() {
           </Link> */}
           <Link href="/">
             <div className='text-[#c8a45e] text-center'>
-              <p className='font-[600] text-[32px] leading-[30px]'>Signature Concierge</p>
+              <p className='font-[600] text-[28px] md:text-[32px] leading-[30px]'>Signature Concierge</p>
               <p className='font-[600] text-[9px]'>Destination Management Company</p>
             </div>
           </Link>

@@ -122,13 +122,13 @@ export default function TopDestinations() {
           </Link>
         </div>
       </div>
-      <div className='bg-primary-light-1 py-[30px]'>
+      <div className='bg-primary-light-1 py-[30px] overflow-hidden'>
         <div className='flex flex-col items-center '>
           <marquee behavior="scroll" direction="">
             <div className='flex gap-4 text-white'>
               {cities.map((data, id) => {
                 return (
-                  <div key={id} className='flex gap-4 text-[22px]'>
+                  <div key={id} className='flex gap-4 text-[18px] md:text-[22px]'>
                     <p>{data}</p>
                     <p>|</p>
                   </div>
