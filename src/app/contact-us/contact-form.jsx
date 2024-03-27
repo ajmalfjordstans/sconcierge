@@ -4,20 +4,26 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 export default function ContactForm() {
   const [success, setSuccess] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
   const sendMail = async (values, { resetForm }) => {
-    const response = await fetch('https://riod-backend.onrender.com/contact-us-sconcierge', {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json'
-      },
-      body: JSON.stringify(values)
-    })
-    if (response.ok) {
-      console.log('Form submitted successfully.');
-      resetForm()
-      setSuccess(true)
-    } else {
-      console.error('Error submitting form.');
+    try {
+      setSubmitting(true)
+      const response = await fetch('https://riod-backend.onrender.com/contact-us-sconcierge', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify(values)
+      })
+      if (response.ok) {
+        console.log('Form submitted successfully.');
+        resetForm()
+        setSuccess(true)
+        setSubmitting(false)
+      }
+    } catch (error) {
+      console.error('Error submitting form.', error);
+      setSubmitting(false)
     }
     console.log(response);
     setTimeout(() => {
@@ -98,7 +104,13 @@ export default function ContactForm() {
                   <ErrorMessage name="message" component="div" className="text-[red] text-[12px]" />
                 </div>
               </div>
-              <button type="submit" disabled={isSubmitting} className='w-full bg-black text-white font-[700] p-[10px]'>Submit</button>
+              {submitting ?
+                <div className='bg-gray-500 p-[10px] text-center text-white'>
+                  Submitting form...
+                </div>
+                :
+                <button type="submit" disabled={isSubmitting} className='w-full bg-black text-white font-[700] p-[10px]'>Submit</button>
+              }
             </Form>
           )}
         </Formik>
