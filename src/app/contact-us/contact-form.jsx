@@ -22,13 +22,13 @@ export default function ContactForm() {
     console.log(response);
     setTimeout(() => {
       setSuccess(false)
-    }, [3000])
+    }, [5000])
   }
   return (
     <>
       {success ?
         <div className='flex justify-center items-center text-center'>
-          <p className='font-[600]'>Thank you for your enquiry, One of our agent will contact you shortly</p>
+          <p className='font-[600]'>Thank you for your enquiry,<br /> One of our agent will contact you shortly</p>
         </div>
         :
         <Formik
